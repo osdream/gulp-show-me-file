@@ -1,6 +1,6 @@
 {
   "name": "gulp-show-me-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulp plugin, show the files in current step",
   "main": "index.js",
   "scripts": {

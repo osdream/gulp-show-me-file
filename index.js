@@ -17,11 +17,9 @@ module.exports = function(logName) {
     logName = logName || 'show-me-file';
 
     function bufferContents(file, enc, cb) {
-        this.push(file);
-
         console.log('>> [' + logName + '] ' + file.path);
 
-        cb();
+        cb(null, file);
     }
 
     return through.obj(bufferContents);
